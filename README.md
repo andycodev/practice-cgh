@@ -19,7 +19,6 @@ Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
 ```bash
 git clone https://github.com/andycodev/practice-cgh.git
 
-```bash
 cd practice-cgh
 yarn install
 yarn dev
