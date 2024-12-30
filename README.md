@@ -1,4 +1,4 @@
-# Instrucciones para Clonar y Levantar el Proyecto Localmente
+# Instrucciones para clonar y levantar el proyecto localmente
 
 Este documento detalla los pasos necesarios para clonar y ejecutar el proyecto en tu entorno local utilizando Yarn como gestor de dependencias.
 
