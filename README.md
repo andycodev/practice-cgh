@@ -1,24 +1,26 @@
-# Instrucciones para clonar y levantar el proyecto localmente
+# Instrucciones para Clonar y Levantar el Proyecto Localmente
 
-Este documento proporciona los pasos para clonar y ejecutar el proyecto en tu entorno local usando Yarn.
+Este documento detalla los pasos necesarios para clonar y ejecutar el proyecto en tu entorno local utilizando Yarn como gestor de dependencias.
 
-## Requisitos previos
+## Requisitos Previos
 
 Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 
-- [Git](https://git-scm.com/) para clonar el repositorio.
-- [Yarn](https://yarnpkg.com/) para la gestión de dependencias y ejecución del proyecto.
-- [Node.js](https://nodejs.org/) (se recomienda la versión LTS).
+- **Git**: Necesario para clonar el repositorio.
+- **Yarn**: Para la gestión de dependencias y ejecución del proyecto.
+- **Node.js**: Se recomienda la versión LTS (Long-Term Support).
 
-## Pasos para clonar el proyecto
+## Pasos para Clonar el Proyecto
 
-1. **Clonar el repositorio**:
+### 1. Clonar el Repositorio
 
-   Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
+Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
 
-   ```bash
-   git clone [https://github.com/tu-usuario/tu-proyecto.git](https://github.com/andycodev/practice-cgh.git)
-   
+```bash
+git clone https://github.com/andycodev/practice-cgh.git
+
+```bash
 cd practice-cgh
 yarn install
 yarn dev
+
