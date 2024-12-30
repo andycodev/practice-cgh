@@ -3,7 +3,7 @@ import { useQuery } from "@tanstack/vue-query";
 import { getUsersFn } from "@/services/user.service";
 
 const useUsersPage = () => {
-  const title: string = 'Listado de usuarios PEP';
+  const title: string = 'Listado de usuarios';
   const search = ref<string>('');
   const headers: any = [
     { title: 'Id', key: 'id' },

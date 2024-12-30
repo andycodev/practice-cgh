@@ -78,9 +78,9 @@
             <td>{{ item.id }}</td>
             <td class="text-truncate">
               <v-avatar color="lime-lighten-1" size="32">
-                <span class="text-subtitle-2">{{ getInitials(item.name) }}</span>
+                <span class="text-body-2">{{ getInitials(item.name) }}</span>
               </v-avatar>
-              {{ item.name }}
+              <span class="ms-2 font-weight-medium">{{ item.name }}</span>
             </td>
             <td>{{ item.email }}</td>
             <td>

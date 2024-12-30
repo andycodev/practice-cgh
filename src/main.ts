@@ -8,7 +8,7 @@ import { createApp } from 'vue'
 import router from './router'
 // Tanstack vue-query
 import { QueryClient, VueQueryPlugin } from '@tanstack/vue-query'
-//configuracion global de vue-query
+// Configuracion global de vue-query
 const queryClient = new QueryClient({
   defaultOptions: {
     queries: {
