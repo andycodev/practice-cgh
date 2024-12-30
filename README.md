@@ -12,7 +12,7 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 
 ## Resumen para levantar el proyecto
 
-Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
+Abre una terminal y ejecuta los siguientes comandos:
 
 ```bash
 git clone https://github.com/andycodev/practice-cgh.git
