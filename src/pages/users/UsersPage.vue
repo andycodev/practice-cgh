@@ -67,6 +67,7 @@
       <v-data-table
         :items="users"
         v-model:search="search"
+        :filter-keys="['name', 'email']"
         :headers="headers"
         item-value="id"
         density="comfortable"
