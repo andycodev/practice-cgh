@@ -10,9 +10,7 @@ Antes de comenzar, asegúrate de tener lo siguiente instalado en tu máquina:
 - **Yarn**: Para la gestión de dependencias y ejecución del proyecto.
 - **Node.js**: Se recomienda la versión LTS (Long-Term Support).
 
-## Pasos para Clonar el Proyecto
-
-### 1. Clonar el Repositorio
+## Resumen para levantar el proyecto
 
 Abre una terminal y ejecuta el siguiente comando para clonar el repositorio:
 
