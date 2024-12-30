@@ -1,26 +1,23 @@
-import { createWebHistory, createRouter } from 'vue-router';
-import UsersPage from '@/pages/users/UsersPage.vue';
+import { createRouter, createWebHistory } from 'vue-router';
 
 const routes = [
   {
     path: '/users',
-    component: UsersPage
+    component: () => import('@/pages/users/UsersPage.vue'),
   },
   {
-    // Ruta predeterminada (por defecto)
     path: '/',
-    redirect: '/users'  // Redirige a /users si la ruta principal es accesada
+    redirect: '/users',
   },
   {
-    // Ruta para redirigir si el usuario accede a una ruta no válida
     path: '/:catchAll(.*)',
-    redirect: '/users'  // Redirige a /users si la ruta no existe
-  }
-]
+    redirect: '/users',
+  },
+];
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;
