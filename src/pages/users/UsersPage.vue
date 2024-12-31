@@ -4,7 +4,7 @@
       <div class="text-truncate">
         <p class="text-h6">
           <v-icon icon="mdi-account-group" :size="30"></v-icon>
-           {{ title }}
+          {{ title }}
         </p>
         <p
           class="text-grey text-body-2 text-truncate ms-9">
@@ -22,7 +22,7 @@
         <v-btn
           v-tooltip:top="'Registrar un nuevo usuario'"
           prepend-icon="mdi-plus"
-          color="primary" >
+          color="primary">
           Nuevo
         </v-btn>
       </div>
@@ -32,7 +32,8 @@
         <div class="d-flex justify-start align-center flex-column flex-sm-row">
           <div class="d-flex align-center">
             <p class="mx-2 text-subtitle-2">Total de registros: {{ users?.length }}</p>
-            <v-btn icon  v-tooltip:top="'Actualizar registros'" size="x-small" color="primary" variant="tonal" @click.prevent="refetchUsers">
+            <v-btn icon v-tooltip:top="'Actualizar registros'" size="x-small" color="primary" variant="tonal"
+                   @click.prevent="refetchUsers">
               <v-icon icon="mdi-reload"></v-icon>
             </v-btn>
           </div>
@@ -52,7 +53,7 @@
         </div>
       </v-card-title>
 
-      <IsLoadingComponent :isLoading="isLoadingUsers" :isReady="isRefetchingUsers" />
+      <IsLoadingComponent :isLoading="isLoadingUsers" :isReady="isRefetchingUsers"/>
 
       <template v-if="isErrorUsers">
         <v-alert
@@ -104,7 +105,7 @@
                                  title="Configurar accesos" link>
                     </v-list-item>
                     <v-list-item prepend-icon="mdi-circle-edit-outline"
-                                               class="text-primary"
+                                 class="text-primary"
                                  title="Editar usuario" link>
                     </v-list-item>
                     <v-list-item prepend-icon="mdi-delete-outline"
@@ -128,8 +129,15 @@ import useUsersPage from "./useUsersPage";
 import IsLoadingComponent from "@/components/IsLoadingComponent.vue";
 
 // Composables
-const { title, search, headers, useGetUsers, getInitials } = useUsersPage();
-const { data: users, isLoading: isLoadingUsers, error: errorUsers, isError: isErrorUsers, refetch: refetchUsers, isRefetching: isRefetchingUsers } = useGetUsers();
+const {title, search, headers, useGetUsers, getInitials} = useUsersPage();
+const {
+  data: users,
+  isLoading: isLoadingUsers,
+  error: errorUsers,
+  isError: isErrorUsers,
+  refetch: refetchUsers,
+  isRefetching: isRefetchingUsers
+} = useGetUsers();
 
 </script>
 
